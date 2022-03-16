@@ -8,7 +8,6 @@ import ThreePartPage from "./Components/ThreePartPage";
 import Profile from "./Components/Profile";
 import Career from "./Components/Career";
 import ContactUs from "./Components/ContactUs";
-import ReactLoading from "react-loading";
 import { GooSpinner } from "react-spinners-kit";
 // import SmoothScroll from "smooth-scroll";
 import "./App.css";
