@@ -12,9 +12,28 @@
   },
   "ContactUs": {
     "title": "Contact Us",
-    "email": "Email: sdfghjwsdsdfgbnm@fghjkfcgvhbjml",
-    "phoneNumber": "Phone Number: 1233456452345667234567",
-    "address": "Address: dfghjklcvbnfdgsdfghjsdfgvbsdf ghjsdfghjfcgvhbnjfcvbhjkmdfghjkghjghj"
+    "email": "Email: info@donoghteh.com",
+    "phoneNumber": "PTel: (+98)-21-86050282/86050280",
+    "address": "AAddress: Unit 72, No. 5, Sobhan Building, Shourideh St., Keshavarz Blvd., Valiasr Sq., Tehran, Iran.",
+    "postalCode": "Postal Code: 1415965317",
+    "stepOneTitle": "Message",
+    "stepTwoTitle": "Email",
+    "stepThreeTitle": "Name"
+  },
+  "DigitalMarketing": {
+    "title": "Digital Marketing",
+    "paragraph": "Lorem ipsum dolor sit amet",
+    "items": "asdfghjk"
+  },
+  "ContentCreation": {
+    "title": "Content Creation",
+    "paragraph": "Lorem ipsum dolor sit amet",
+    "items": "asdfghjk"
+  },
+  "FilmAndSeries": {
+    "title": "Film And Series",
+    "paragraph": "Lorem ipsum dolor sit amet",
+    "items": "asdfghjk"
   },
   "Gallery": [
     {
