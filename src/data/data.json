@@ -4,20 +4,44 @@
     "preParagraph": "Wherever our clients have a need, we get things moving, Welcome to Donoghteh: ",
     "paragraph": "Donoghteh is a community of talented creative thinkers, who have not forgotten the importance of taking on the hardest challenges with the best attitudes focusing on private equity and venture capital like never before in a different angle. Our teams of optimists, artists and first-movers coalesce around the needs of our clients, unlocking unique possibilities for sustainable value and lasting change."
   },
-  "About": {
+  "ThreePartPage": {
+    "title": "Title",
+    "underTitle": "Lorem ipsum dolor sit amet",
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
-    ],
-    "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
-    ]
+    "image" : "https://source.unsplash.com/2ShvY8Lf6l0/800x599"
+  },
+  "ContactUs": {
+    "title": "Contact Us",
+    "email": "Email: info@donoghteh.com",
+    "phoneNumber": "PTel: (+98)-21-86050282/86050280",
+    "address": "Address: Unit 72, No. 5, Sobhan Building, Shourideh St., Keshavarz Blvd., Valiasr Sq., Tehran, Iran.",
+    "postalCode": "Postal Code: 1415965317",
+    "stepOneTitle": "Message",
+    "stepTwoTitle": "Email",
+    "stepThreeTitle": "Name"
+  },
+  "Career": {
+    "title": "Career"
+  },
+  "DigitalMarketing": {
+    "title": "Digital Marketing",
+    "paragraph": "There ’ s a whole range of reasons we ’ re going to be leaders. Using research, insight and strategy, Donoghteh enables innovative, creative, compelling campaigns and builds digital capabilities for its clients who don't have an integrated plan to support digital transformation and company growth, and engage their audiences effectively online.",
+    "items": ["Platform", "Development Search Engine Optimization (SEO)", "Content Marketing"]
+  },
+  "ContentCreation": {
+    "title": "Content Creation",
+    "paragraph": "We change the way you define yourself. That ’ s a promise. Donoghteh uses the power of creativity to create emotion at scale to help brands be more easily remembered and emotion in context. With plenty of customization in mind, we'll make sure that your brand is ready to take the world!",
+    "items": ["asdfghjk"]
+  },
+  "FilmAndSeries": {
+    "title": "Film And Series",
+    "paragraph": "We, in Donoghteh, have been trying for years to bring to screen the human stories at the heart of the businesses that are driving change and fuelling growth through venture capital. The way we see it, if you are going to stay late, fight for ideas and make the best work of your life you may as well do it with people you like.",
+    "items": ["Film Venture Capital", "Short Film", "Screenplay"]
+  },
+  "Team": {
+    "title": "Pleasure to work with",
+    "paragraph": "We, in Donoghteh, have been trying for years to bring to screen the human stories at the heart of the businesses that are driving change and fuelling growth through venture capital. The way we see it, if you are going to stay late, fight for ideas and make the best work of your life you may as well do it with people you like.",
+    "items": ["Film Venture Capital", "Short Film", "Screenplay"]
   },
   "Gallery": [
     {
@@ -130,7 +154,7 @@
       "name": "Johnathan Doe"
     }
   ],
-  "Team": [
+  "Teams": [
     {
       "img": "img/team/01.jpg",
       "name": "John Doe",
