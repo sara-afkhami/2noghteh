@@ -10,8 +10,8 @@ const Final = ({ values, prevStep, nextStep }) => {
   return (
     <>
 
-      <Card className="send-massage-body" style={{ textAlign: "center" }}>
-        <Card.Body className="send-massage-form">
+      <Card className="send-massage-body" style={{ textAlign: "center" , margin: "auto"}}>
+        <Card.Body className="send-massage-form" style={{ "color": "white" }}>
           <p>
             <strong>Message: </strong> {message}{" "}
           </p>
@@ -19,7 +19,7 @@ const Final = ({ values, prevStep, nextStep }) => {
             <strong>Email: </strong> {email}{" "}
           </p>
           <p>
-            <strong>Nmae: </strong> {name}{" "}
+            <strong>Name: </strong> {name}{" "}
           </p>
           <div className="btns">
       <Button onClick={prevStep}>

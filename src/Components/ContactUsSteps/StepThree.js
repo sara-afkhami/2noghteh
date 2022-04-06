@@ -24,11 +24,11 @@ const StepThree = ({ nextStep, prevStep, handleFormData, value }) => {
 
   return (
     <div>
-      <Card className="send-massage-body">
+      <Card className="send-massage-body" style={{margin: "auto"}}>
         <Card.Body className="send-massage-form">
           <Form onSubmit={submitFormData}>
             <Form.Group className="mb-3">
-              <Form.Label>What's Your Name?</Form.Label>
+              <Form.Label className="send-massage-label">What's Your Name?</Form.Label>
               <Form.Control
                 style={{ border: error ? "2px solid red" : "" }}
                 name="name"

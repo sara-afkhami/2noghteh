@@ -4,21 +4,49 @@ import StepOne from "./ContactUsSteps/StepOne";
 import StepTwo from "./ContactUsSteps/StepTwo";
 import StepThree from "./ContactUsSteps/StepThree";
 import Loader from "./Loader";
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const SocialMedia = () => {
   return (
-    <div className="space social-media">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-pinterest"></a>
-      <a href="#" class="fa fa-skype"></a>
-      <a href="#" class="fa fa-telegram"></a>
-      <a href="#" class="fa fa-whatsapp"></a>
+    <div align="center" class="socialbtns">
+      <ul>
+        <li>
+          <a href="#" class="fa fa-lg fa-facebook"></a>
+        </li>
+        <li>
+          <a href="#" class="fa fa-lg fa-twitter"></a>
+        </li>
+        <li>
+          <a href="#" class="fa fa-lg fa-linkedin"></a>
+        </li>
+        <li>
+          <a href="#" class="fa fa-lg fa-instagram"></a>
+        </li>
+        <li>
+          <a href="#" class="fa fa-lg fa-pinterest"></a>
+        </li>
+        <li>
+          <a href="#" class="fa fa-lg fa-skype"></a>
+        </li>
+        <li>
+          <a href="#" class="fa fa-lg fa-telegram"></a>
+        </li>
+        <li>
+          <a href="#" class="fa fa-lg fa-whatsapp"></a>
+        </li>
+      </ul>
     </div>
+    // <div className="space social-media" style={{"justify-content": "space-between"}}>
+    //   <a href="#" class="fa fa-facebook"></a>
+    //   <a href="#" class="fa fa-twitter"></a>
+    //   <a href="#" class="fa fa-linkedin"></a>
+    //   <a href="#" class="fa fa-instagram"></a>
+    //   <a href="#" class="fa fa-pinterest"></a>
+    //   <a href="#" class="fa fa-skype"></a>
+    //   <a href="#" class="fa fa-telegram"></a>
+    //   <a href="#" class="fa fa-whatsapp"></a>
+    // </div>
   );
 };
 
@@ -166,12 +194,8 @@ const ContactUs = (props) => {
         });
       setTimeout(() => {
         window.location.reload();
-      }, 500);
-      return (
-        <div className="App">
-          <p>success</p>
-        </div>
-      );
+      }, 200);
+      return;
     // default case to show nothing
     default:
       return <div className="App"></div>;

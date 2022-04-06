@@ -22,11 +22,11 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
   };
   return (
     <>
-      <Card className="send-massage-body">
+      <Card className="send-massage-body" style={{margin: "auto"}}>
         <Card.Body className="send-massage-form">
           <Form onSubmit={submitFormData}>
             <Form.Group className="mb-3">
-              <Form.Label>Email</Form.Label>
+              <Form.Label className="send-massage-label">Email</Form.Label>
               <Form.Control
                 style={{ border: error ? "2px solid red" : "" }}
                 type="email"

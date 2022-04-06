@@ -136,6 +136,9 @@ const Gallery = () => {
   
 
   const filter = (tag) => {
+
+      var element = document.getElementById(tag);
+      element.classList.toggle("filtered");
     let selected = [];
 
     if (selectedTags.includes(tag)) {
@@ -158,7 +161,9 @@ const Gallery = () => {
     }
     else{
       for (let i = 0; i < allPhotos.length; i++) {
-        if (JSON.stringify(allPhotos[i].tags) === JSON.stringify(selected)) {
+        console.log(JSON.stringify(allPhotos[i].tags) === JSON.stringify(selected));
+        if (
+        selected.every(elem => allPhotos[i].tags.indexOf(elem) > -1)) {
           localPhotos.push(allPhotos[i]);
         } else continue;
       }
@@ -220,14 +225,15 @@ const Gallery = () => {
           <SwipeableViews index={value} onChangeIndex={handleChangeIndex}>
             <TabPanel value={value} index={0}>
               <div className="tab-div">
-                <div>
-                  <button className="tab-button" onClick={() => filter("logo")}>
+                <div className="filters">
+                  <button id="logo" className="tab-button" onClick={() => filter("logo")}>
                     +logo
                   </button>
-                  <button className="tab-button" onClick={() => filter("cl")}>
+                  <button id="cl" className="tab-button" onClick={() => filter("cl")}>
                     +Cl
                   </button>
                   <button
+                    id="catalog"
                     className="tab-button"
                     onClick={() => filter("catalog")}
                   >

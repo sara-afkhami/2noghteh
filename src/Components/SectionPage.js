@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Loader from "./Loader";
 
-const Di = (props) => {
+const SectionPage = (props) => {
   const [done, setDone] = useState(undefined);
   useEffect(() => {
     setTimeout(() => {
       setDone(true);
     }, 2000);
   }, []);
-  // console.log("items"+props.items)
-  // const Items = (items) =>{
-  //   for (let i = 0; i < items.length; i++) {
-  //     return (<li>{items.item ? items.item[i] : "Loading"}</li>);
-
-  //   }
-  // }
+  const printItems = (data) => {
+    let listItems = data.items.map((item) => <li>{item}</li>);
+    return listItems;
+  };
 
   return (
     <>
@@ -28,9 +25,7 @@ const Di = (props) => {
               <span></span>
             </h1>
             <p>{props.data ? props.data.paragraph : "Loading"}</p>
-            <ul>
-              <li>{props.data ? props.data.items : "Loading"}</li>
-            </ul>
+            <ul>{printItems(props.data)}</ul>
             <button className="more-btn">More</button>
           </div>
         </div>
@@ -38,4 +33,4 @@ const Di = (props) => {
     </>
   );
 };
-export default Di;
+export default SectionPage;

@@ -11,7 +11,8 @@ import ContactUs from "./Components/ContactUs";
 import { GooSpinner } from "react-spinners-kit";
 // import SmoothScroll from "smooth-scroll";
 import "./App.css";
-import Di from "./Components/Di";
+import SectionPage from "./Components/SectionPage";
+import Team from "./Components/Team";
 
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
@@ -66,7 +67,7 @@ function App() {
           <Route
             exact
             path="/career"
-            component={() => <Career data={landingPageData.ThreePartPage} />}
+            component={() => <Career data={landingPageData.Career} />}
           />
           <Route
             exact
@@ -76,22 +77,22 @@ function App() {
           <Route
             exact
             path="/digitalmarketing"
-            component={() => <Di data={landingPageData.DigitalMarketing} />}
+            component={() => <SectionPage data={landingPageData.DigitalMarketing} />}
           />
           <Route
             exact
             path="/contentcreation"
-            component={() => <Di data={landingPageData.ContentCreation} />}
+            component={() => <SectionPage data={landingPageData.ContentCreation} />}
           />
           <Route
             exact
             path="/filmandseries"
-            component={() => <Di data={landingPageData.FilmAndSeries} />}
+            component={() => <SectionPage data={landingPageData.FilmAndSeries} />}
           />
           <Route
             exact
             path="/team"
-            component={() => <Di data={landingPageData.FilmAndSeries} />}
+            component={() => <Team data={landingPageData.Team} />}
           />
         </Switch>
       </Router>

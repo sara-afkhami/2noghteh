@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Formik, Field, Form } from "formik";
 import { DropzoneDialog } from "material-ui-dropzone";
 import useDrivePicker from "react-google-drive-picker";
@@ -7,6 +8,12 @@ import Loader from "./Loader";
 const Career = (props) => {
   const [openPicker, data, authResponse] = useDrivePicker();
   const [done, setDone] = useState(undefined);
+  const [formData, setFormData] = useState({
+    name: "",
+    fieldOfExperience: "",
+    phoneNumber: "",
+    email: "",
+  });
   useEffect(() => {
     setTimeout(() => {
       setDone(true);
@@ -75,28 +82,44 @@ const Career = (props) => {
         <Loader />
       ) : (
         <div className="intro">
-          <div className="col-md-5 intro-text main">
+          <div className="col-md-6 intro-text main">
             <h1>
               {props.data ? props.data.title : "Loading"}
               <span></span>
             </h1>
             <Formik
               initialValues={{
-                Name: "",
+                name: "",
                 fieldOfExperience: "",
                 phoneNumber: "",
                 email: "",
                 files: "",
               }}
-              onSubmit={async (values) => {
-                alert(JSON.stringify(values, null, 2));
+              onSubmit={(values) => {
+                // alert(JSON.stringify(values, null, 2));
+                setFormData(values);
+                console.log(formData);
+                let careerName = formData.name;
+                let fieldOfExperience = formData.fieldOfExperience;
+                let phoneNumber = formData.phoneNumber;
+                let careerEmail = formData.email;
+                
+                const object = { careerName, fieldOfExperience, phoneNumber, careerEmail };
+                axios
+                  .post(
+                    "https://sheet.best/api/sheets/600eb564-0138-41e5-9961-d5878ce03114",
+                    object
+                  )
+                  .then((response) => {
+                    console.log("--->>> " + response.data);
+                  });
               }}
             >
               <Form>
                 <div className="form-group">
                   <div className="form-item">
-                    <label htmlFor="Name">Name:</label>
-                    <Field id="Name" name="Name" placeholder="" />
+                    <label htmlFor="name">Name:</label>
+                    <Field id="name" name="name" placeholder="" />
                   </div>
 
                   <div className="form-item">
