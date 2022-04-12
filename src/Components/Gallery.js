@@ -50,19 +50,18 @@ function a11yProps(index) {
 const BasicRows = (props) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
-
-  const openLightbox = useCallback(({ photo, index }) => {
+  const openLightbox = useCallback((event, { photo, index }) => {
     setCurrentImage(index);
     setViewerIsOpen(true);
   }, []);
-
   const closeLightbox = () => {
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
+  console.log("--->>>> (2)"+currentImage)
   return (
     <div>
-      <PhotoGallery photos={props.photos} onClick={openLightbox} />
+      <PhotoGallery photos={props.photos} onClick={openLightbox}  />
       <ModalGateway >
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
