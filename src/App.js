@@ -13,6 +13,7 @@ import { GooSpinner } from "react-spinners-kit";
 import "./App.css";
 import SectionPage from "./Components/SectionPage";
 import Team from "./Components/Team";
+import NavBar from "./Components/Navbar/NavBar";
 
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
@@ -38,7 +39,8 @@ function App() {
   ) : (
     <div className="app">
       <Router>
-        <Header />
+        {/* <Header /> */}
+        <NavBar/>
         <Switch>
           <Route
             exact

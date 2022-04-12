@@ -124,7 +124,7 @@ const Career = (props) => {
 
                   <div className="form-item">
                     <label htmlFor="fieldOfExperience">
-                      FieldOfExperience:
+                      Field Of Experience:
                     </label>
                     <Field
                       id="fieldOfExperience"
