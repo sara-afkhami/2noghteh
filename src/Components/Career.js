@@ -8,12 +8,6 @@ import Loader from "./Loader";
 const Career = (props) => {
   const [openPicker, data, authResponse] = useDrivePicker();
   const [done, setDone] = useState(undefined);
-  const [formData, setFormData] = useState({
-    name: "",
-    fieldOfExperience: "",
-    phoneNumber: "",
-    email: "",
-  });
   useEffect(() => {
     setTimeout(() => {
       setDone(true);
@@ -97,33 +91,35 @@ const Career = (props) => {
               }}
               onSubmit={(values) => {
                 // alert(JSON.stringify(values, null, 2));
-                setFormData(values);
-                console.log(formData);
-                let careerName = formData.name;
-                let fieldOfExperience = formData.fieldOfExperience;
-                let phoneNumber = formData.phoneNumber;
-                let careerEmail = formData.email;
+                const { name, fieldOfExperience, phoneNumber, email } = values;
                 
-                const object = { careerName, fieldOfExperience, phoneNumber, careerEmail };
+                // let careerName = formData.name;
+                // let fieldOfExperience = formData.fieldOfExperience;
+                // let phoneNumber = formData.phoneNumber;
+                // let careerEmail = formData.email;
+                
+                const object = { name, fieldOfExperience, phoneNumber, email };
+                console.log(object);
                 axios
                   .post(
-                    "https://sheet.best/api/sheets/600eb564-0138-41e5-9961-d5878ce03114",
+                    "https://sheet.best/api/sheets/7f6fb81d-fa4a-4a36-b958-2601cf98d701",
                     object
                   )
                   .then((response) => {
                     console.log("--->>> " + response.data);
-                  });
+                  })
+                  .catch((error) => {console.log("error" + error);});
               }}
             >
               <Form>
                 <div className="form-group">
                   <div className="form-item">
-                    <label htmlFor="name">Name:</label>
+                    <label className="form-label-career" htmlFor="name">Name:</label>
                     <Field id="name" name="name" placeholder="" />
                   </div>
 
                   <div className="form-item">
-                    <label htmlFor="fieldOfExperience">
+                    <label className="form-label-career" htmlFor="fieldOfExperience">
                       Field Of Experience:
                     </label>
                     <Field
@@ -134,12 +130,12 @@ const Career = (props) => {
                   </div>
 
                   <div className="form-item">
-                    <label htmlFor="phoneNumber">PhoneNumber:</label>
+                    <label className="form-label-career" htmlFor="phoneNumber">Phone Number:</label>
                     <Field id="phoneNumber" name="phoneNumber" placeholder="" />
                   </div>
 
                   <div className="form-item">
-                    <label htmlFor="email">Email:</label>
+                    <label className="form-label-career" htmlFor="email">Email:</label>
                     <Field
                       id="email"
                       name="email"

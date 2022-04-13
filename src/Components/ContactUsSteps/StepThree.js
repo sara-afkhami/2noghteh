@@ -34,7 +34,7 @@ const StepThree = ({ nextStep, prevStep, handleFormData, value }) => {
                 name="name"
                 defaultValue={value.name}
                 type="text"
-                placeholder="First Name"
+                placeholder="Name"
                 onChange={handleFormData("name")}
               />
               {error ? (

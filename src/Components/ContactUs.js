@@ -5,7 +5,23 @@ import StepTwo from "./ContactUsSteps/StepTwo";
 import StepThree from "./ContactUsSteps/StepThree";
 import Loader from "./Loader";
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+export const notifySuccess = (message) =>
+  toast(<p style={{ fontSize: 16 }}>{message}</p>, {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    newestOnTop: false,
+    closeOnClick: true,
+    rtl: false,
+    pauseOnFocusLoss: true,
+    draggable: true,
+    pauseOnHover: true,
+    type: "success",
+  });
 
 const SocialMedia = () => {
   return (
@@ -58,7 +74,6 @@ const ContactUs = (props) => {
       setDone(true);
     }, 2000);
   }, []);
-
   //state for form data
   const [formData, setFormData] = useState({
     message: "",
@@ -178,24 +193,11 @@ const ContactUs = (props) => {
         </div>
       );
     case 5:
-      console.log(JSON.stringify(formData));
-      let message = formData.message;
-      let email = formData.email;
-      let name = formData.name;
-
-      const object = { message, email, name };
-      axios
-        .post(
-          "https://sheet.best/api/sheets/600eb564-0138-41e5-9961-d5878ce03114",
-          object
-        )
-        .then((response) => {
-          console.log("--->>> " + response);
-        });
       setTimeout(() => {
         window.location.reload();
-      }, 200);
-      return;
+      }, 1000);
+      notifySuccess("success!");
+      return <ToastContainer />;
     // default case to show nothing
     default:
       return <div className="App"></div>;
