@@ -53,16 +53,6 @@ const SocialMedia = () => {
         </li>
       </ul>
     </div>
-    // <div className="space social-media" style={{"justify-content": "space-between"}}>
-    //   <a href="#" class="fa fa-facebook"></a>
-    //   <a href="#" class="fa fa-twitter"></a>
-    //   <a href="#" class="fa fa-linkedin"></a>
-    //   <a href="#" class="fa fa-instagram"></a>
-    //   <a href="#" class="fa fa-pinterest"></a>
-    //   <a href="#" class="fa fa-skype"></a>
-    //   <a href="#" class="fa fa-telegram"></a>
-    //   <a href="#" class="fa fa-whatsapp"></a>
-    // </div>
   );
 };
 
@@ -194,9 +184,11 @@ const ContactUs = (props) => {
       );
     case 5:
       setTimeout(() => {
-        window.location.reload();
-      }, 1000);
+        setstep(0);
+      }, 2000);
       notifySuccess("success!");
+      // setstep(0);
+      
       return <ToastContainer />;
     // default case to show nothing
     default:

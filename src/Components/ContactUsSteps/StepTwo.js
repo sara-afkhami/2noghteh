@@ -29,6 +29,8 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
               <Form.Label className="send-massage-label">Email</Form.Label>
               <Form.Control
                 style={{ border: error ? "2px solid red" : "" }}
+                name="email"
+                defaultValue={values.email}
                 type="email"
                 placeholder="Email"
                 onChange={handleFormData("email")}
