@@ -12,7 +12,7 @@ const StepOne = ({ nextStep, prevStep, handleFormData, value }) => {
   const submitFormData = (e) => {
     e.preventDefault();
 
-    // checking if value of first name and last name is empty show error else take to step 2
+    // checking if value of first name and last name is empty show error else take to step 2 `${props.color}`
     if (
       validator.isEmpty(value.message)
     ) {
@@ -34,7 +34,7 @@ const StepOne = ({ nextStep, prevStep, handleFormData, value }) => {
                 name="message"
                 defaultValue={value.message}
                 type="text"
-                placeholder="First Name"
+                placeholder="Message"
                 onChange={handleFormData("message")}
               />
               {error ? (

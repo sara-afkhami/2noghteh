@@ -38,7 +38,7 @@ const Home = (props) => {
               {props.data ? props.data.title : "Loading"}
               <span></span>
             </h1>
-            <p>{props.data ? props.data.preParagraph : "Loading"}</p>
+            <p><strong>{props.data ? props.data.preParagraph : "Loading"}</strong></p>
             <p>{props.data ? props.data.paragraph : "Loading"}</p>
           </div>
           <div className="col-md-4 intro-text main" id="home-gif">

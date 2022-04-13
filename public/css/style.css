@@ -619,10 +619,10 @@ input {
   align-items: end;
   margin: 15px 0px;
 }
-label {
+.form-label-career{
   margin-bottom: 0;
   font-size: 20px !important;
-  width: auto;
+  width: 400px;
 }
 .career-buttons {
   padding-top: 20px;

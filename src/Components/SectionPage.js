@@ -24,8 +24,8 @@ const SectionPage = (props) => {
               {props.data ? props.data.title : "Loading"}
               <span></span>
             </h1>
-            <p>{props.data ? props.data.paragraph : "Loading"}</p>
-            <ul>{printItems(props.data)}</ul>
+            <p><strong>{props.data ? props.data.paragraph : "Loading"}</strong></p>
+            <p><ul>{printItems(props.data)}</ul></p>
             <button className="more-btn">More</button>
           </div>
         </div>

@@ -30,7 +30,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
               <Form.Control
                 style={{ border: error ? "2px solid red" : "" }}
                 type="email"
-                placeholder="email"
+                placeholder="Email"
                 onChange={handleFormData("email")}
               />
               {error ? (
