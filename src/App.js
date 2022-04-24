@@ -96,6 +96,11 @@ function App() {
             path="/team"
             component={() => <Team data={landingPageData.Team} />}
           />
+          <Route
+            exact
+            path="/team"
+            component={() => <Team data={landingPageData.Team} />}
+          />
         </Switch>
       </Router>
     </div>

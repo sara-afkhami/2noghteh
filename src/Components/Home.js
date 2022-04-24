@@ -41,7 +41,7 @@ const Home = (props) => {
             <p><strong>{props.data ? props.data.preParagraph : "Loading"}</strong></p>
             <p>{props.data ? props.data.paragraph : "Loading"}</p>
           </div>
-          <div className="col-md-4 intro-text main" id="home-gif">
+          <div className="col-md-4 intro-text main animated-div" id="home-gif">
             <Lottie options={defaultOptions} height={400} width={400} />
           </div>
         </div>

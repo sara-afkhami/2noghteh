@@ -8,6 +8,8 @@ import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Lottie from "react-lottie";
+import gif from "./Lottie/100797-plug-in-failed.json"
 
 export const notifySuccess = (message) =>
   toast(<p style={{ fontSize: 16 }}>{message}</p>, {
@@ -70,7 +72,14 @@ const ContactUs = (props) => {
     email: "",
     name: "",
   });
-
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: gif,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   // function for going to next step by increasing step state by 1
   const nextStep = () => {
     setstep(step + 1);
@@ -128,6 +137,9 @@ const ContactUs = (props) => {
           </button>
           <SocialMedia />
         </div>
+        <div className="col-md-7 intro-text main animated-div" id="home-gif">
+            <Lottie options={defaultOptions} height={400} width={400} />
+          </div>
       </div>
     );
   };

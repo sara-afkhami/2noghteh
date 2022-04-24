@@ -1,3 +1,4 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 .loading {
   background-color: transparent;
   position: absolute;
@@ -31,17 +32,22 @@
 .app {
   background: url(../img/intro-bg.png);
   background-repeat: repeat-y;
-  -webkit-background-size: auto;
-  -moz-background-size: auto;
-  background-size: auto;
-  -o-background-size: auto;
+  -webkit-background-size: 100vw;
+  -moz-background-size: 100vw;
+  background-size: 100vw;
+  -o-background-size: 100vw;
 }
 @media (max-width: 1700px) {
   .app {
     background-image: none !important;
   }
 }
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+@media (max-width: 991px) {
+.animated-div{
+  display: none
+}
+}
 
 a,
 a:hover {
@@ -436,13 +442,16 @@ div.navbar-btn{
 }
 body,
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #777;
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
+}
+h1 {
+  font-family: ""
 }
 h2,
 h3,

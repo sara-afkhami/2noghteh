@@ -19,7 +19,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/artwork"
+                to="artwork"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -30,7 +30,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/career"
+                to="career"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -41,7 +41,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/digitalmarketing"
+                to="digitalmarketing"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -52,7 +52,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/contentcreation"
+                to="contentcreation"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -63,7 +63,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/filmandseries"
+                to="filmandseries"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -74,7 +74,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/team"
+                to="team"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -83,7 +83,7 @@ function NavBar() {
               </NavLink>
             </li>
             <div className="navbar-btn">
-          <NavLink to="/contactus">
+          <NavLink to="contactus">
             <button className="header-btn">contact us</button>
           </NavLink>
         </div>
