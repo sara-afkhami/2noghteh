@@ -4,6 +4,8 @@ import { Formik, Field, Form } from "formik";
 import { DropzoneDialog } from "material-ui-dropzone";
 import useDrivePicker from "react-google-drive-picker";
 import Loader from "./Loader";
+import Lottie from "react-lottie";
+import gif from "./Lottie/103154-becket-loader-01.json";
 
 const Career = (props) => {
   const [openPicker, data, authResponse] = useDrivePicker();
@@ -35,10 +37,17 @@ const Career = (props) => {
       data.docs.map((i) => console.log(i));
     }
   }, [data]);
-
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: gif,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   const UploadButton = () => {
     // const [open, setOpen] = useState(false);
-
+   
     return (
       <div>
         <button
@@ -157,6 +166,9 @@ const Career = (props) => {
                 </div>
               </Form>
             </Formik>
+          </div>
+          <div className="col-md-6 intro-text main animated-div" id="home-gif">
+            <Lottie options={defaultOptions} height={400} width={400} />
           </div>
         </div>
       )}
