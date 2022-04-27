@@ -1,9 +1,6 @@
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import React, { Suspense } from "react";
-import { useState, useEffect } from "react";
+import React,{ useState, useEffect } from "react";
 import JsonData from "./data/data.json";
-import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Gallery from "./Components/Gallery";
 import ThreePartPage from "./Components/ThreePartPage";
