@@ -72,7 +72,9 @@ const Header = (props) => {
           <HeaderLink page="artWork" />
           <HeaderLink page="contactUs" />
           <HeaderLink page="career" />
+          <HeaderLink page="teamtwo" />
           <HeaderLink page="team" />
+          
           
         </div>
         <div className="navbar-btn">

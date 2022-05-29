@@ -1,9 +1,6 @@
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import React, { Suspense } from "react";
-import { useState, useEffect } from "react";
+import React,{ useState, useEffect } from "react";
 import JsonData from "./data/data.json";
-import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Gallery from "./Components/Gallery";
 import ThreePartPage from "./Components/ThreePartPage";
@@ -16,6 +13,7 @@ import "./App.css";
 import SectionPage from "./Components/SectionPage";
 import Team from "./Components/Team";
 import NavBar from "./Components/Navbar/NavBar";
+import TeamTwo from "./Components/TeamTwo";
 
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
@@ -92,6 +90,11 @@ function App() {
               <Route
                 exact
                 path="/team"
+                name = "team two"  element ={<TeamTwo />}
+              />
+              <Route
+                exact
+                path="/teams"
                 name = "team"  element ={<Team data={landingPageData.Team} />}
               />
               {/* <Route exact path="/500" name="Page 500" element={<Page500 />} />

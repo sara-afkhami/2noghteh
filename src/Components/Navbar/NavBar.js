@@ -82,6 +82,17 @@ function NavBar() {
                 Team
               </NavLink>
             </li>
+            {/* <li className="nav-item">
+              <NavLink
+                exact
+                to="team"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Team
+              </NavLink>
+            </li> */}
             <div className="navbar-btn">
           <NavLink to="contactus">
             <button className="header-btn">contact us</button>

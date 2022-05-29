@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Loader from "./Loader";
 import Lottie from "react-lottie";
-import gif1 from "./Lottie/102070-thank-you-yoga-style.json";
-import gif2 from "./Lottie/101687-tap-burst.json";
-import gif3 from "./Lottie//102800-blue-circle.json";
+import gif1 from "../Lottie/JSON/content creation.webm.lottie.json";
+import gif2 from "../Lottie/JSON/digital market.webm.lottie.json";
+import gif3 from "../Lottie/JSON/film & series.webm.lottie.json";
 // let gifs = [];
 
 const SectionPage = (props) => {
