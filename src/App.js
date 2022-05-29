@@ -13,6 +13,7 @@ import "./App.css";
 import SectionPage from "./Components/SectionPage";
 import Team from "./Components/Team";
 import NavBar from "./Components/Navbar/NavBar";
+import TeamTwo from "./Components/TeamTwo";
 
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 1000,
@@ -89,6 +90,11 @@ function App() {
               <Route
                 exact
                 path="/team"
+                name = "team two"  element ={<TeamTwo />}
+              />
+              <Route
+                exact
+                path="/teams"
                 name = "team"  element ={<Team data={landingPageData.Team} />}
               />
               {/* <Route exact path="/500" name="Page 500" element={<Page500 />} />

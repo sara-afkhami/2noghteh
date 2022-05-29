@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Lottie from "react-lottie";
-import gif from "./Lottie/100797-plug-in-failed.json"
+import gif from "../Lottie/JSON/contact us.webm.lottie.json"
 
 export const notifySuccess = (message) =>
   toast(<p style={{ fontSize: 16 }}>{message}</p>, {

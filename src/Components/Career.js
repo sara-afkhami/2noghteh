@@ -5,7 +5,7 @@ import { DropzoneDialog } from "material-ui-dropzone";
 import useDrivePicker from "react-google-drive-picker";
 import Loader from "./Loader";
 import Lottie from "react-lottie";
-import gif from "./Lottie/103154-becket-loader-01.json";
+import gif from "../Lottie/JSON/career.webm.lottie.json";
 
 const Career = (props) => {
   const [openPicker, data, authResponse] = useDrivePicker();
