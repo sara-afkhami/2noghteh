@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Formik, Field, Form } from "formik";
-import { DropzoneDialog } from "material-ui-dropzone";
-import useDrivePicker from "react-google-drive-picker";
+// import { DropzoneDialog } from "material-ui-dropzone";
+// import useDrivePicker from "react-google-drive-picker";
 import Loader from "./Loader";
 import Lottie from "react-lottie";
 import gif from "../Lottie/JSON/career.webm.lottie.json";
 
 const Career = (props) => {
-  const [openPicker, data, authResponse] = useDrivePicker();
+  // const [openPicker, data, authResponse] = useDrivePicker();
   const [done, setDone] = useState(undefined);
   useEffect(() => {
     setTimeout(() => {
@@ -16,27 +16,27 @@ const Career = (props) => {
     }, 2000);
   }, []);
   // const customViewsArray = [new google.picker.DocsView()]; // custom view
-  const handleOpenPicker = () => {
-    openPicker({
-      clientId:
-        "901092617546-3rkoqkh4cth5d4frl3e316vvuaaarg0h.apps.googleusercontent.com",
-      developerKey: "AIzaSyA5vZTXWamjS4D4U7gzXz8g5fPt52lOh3I",
-      viewId: "DOCS",
-      //token:"##youraccesstoken##", // pass oauth token in case you already have one
-      showUploadView: true,
-      showUploadFolders: true,
-      supportDrives: true,
-      multiselect: true,
-      // customViews: customViewsArray, // custom view
-    });
-  };
+  // const handleOpenPicker = () => {
+  //   openPicker({
+  //     clientId:
+  //       "901092617546-3rkoqkh4cth5d4frl3e316vvuaaarg0h.apps.googleusercontent.com",
+  //     developerKey: "AIzaSyA5vZTXWamjS4D4U7gzXz8g5fPt52lOh3I",
+  //     viewId: "DOCS",
+  //     //token:"##youraccesstoken##", // pass oauth token in case you already have one
+  //     showUploadView: true,
+  //     showUploadFolders: true,
+  //     supportDrives: true,
+  //     multiselect: true,
+  //     // customViews: customViewsArray, // custom view
+  //   });
+  // };
 
-  useEffect(() => {
-    // do anything with the selected/uploaded files
-    if (data) {
-      data.docs.map((i) => console.log(i));
-    }
-  }, [data]);
+  // useEffect(() => {
+  //   // do anything with the selected/uploaded files
+  //   if (data) {
+  //     data.docs.map((i) => console.log(i));
+  //   }
+  // }, [data]);
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -53,7 +53,7 @@ const Career = (props) => {
         <button
           className="career-btn upload"
           onClick={() => {
-            handleOpenPicker();
+            // handleOpenPicker();
           }}
           type="button"
         >
