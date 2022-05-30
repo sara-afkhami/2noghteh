@@ -13,11 +13,6 @@ const SectionPage = (props) => {
       setDone(true);
     }, 2000);
   }, []);
-  // for (let i = 0; i < 3; i++) {
-  //   gifs.push(gif`${i}`)
-    
-  // }
-  // let gif = gif`${props.data.gif}`;
   let gifs = [gif1, gif2, gif3];
   const printItems = (data) => {
     let listItems = data.items.map((item) => <li>{item}</li>);
@@ -37,7 +32,7 @@ const SectionPage = (props) => {
         <Loader />
       ) : (
         <div className="intro">
-          <div className="col-md-8 intro-text main">
+          <div className="col-md-6 intro-text main">
             <h1>
               {props.data ? props.data.title : "Loading"}
               <span></span>
@@ -46,8 +41,8 @@ const SectionPage = (props) => {
             <p><ul>{printItems(props.data)}</ul></p>
             <button className="more-btn">More</button>
           </div>
-          <div className="col-md-4 intro-text main animated-div" id="home-gif">
-            <Lottie options={defaultOptions} height={400} width={400} />
+          <div className="col-md-6 intro-text main animated-div" id="home-gif">
+            <Lottie options={defaultOptions} height={400} width={600} />
           </div>
         </div>
       )}

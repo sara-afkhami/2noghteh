@@ -459,6 +459,7 @@ html {
 }
 h1 {
   font-family: Benton Moddisp;
+  letter-spacing: 4px;
 }
 h2,
 h3,
@@ -628,6 +629,13 @@ input {
   border-bottom: 0.01px solid gray;
   overflow: hidden;
 }
+/* @media (max-width: 600px) {
+  .form-item {
+    display: flex;
+    flex-direction: column;
+
+  }
+} */
 .form-item {
   color: #fff;
   display: flex;
@@ -635,6 +643,7 @@ input {
   align-items: end;
   margin: 15px 0px;
 }
+
 .form-label-career {
   margin-bottom: 0;
   font-size: 20px !important;

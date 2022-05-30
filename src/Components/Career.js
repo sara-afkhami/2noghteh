@@ -168,7 +168,7 @@ const Career = (props) => {
             </Formik>
           </div>
           <div className="col-md-6 intro-text main animated-div" id="home-gif">
-            <Lottie options={defaultOptions} height={400} width={400} />
+            <Lottie options={defaultOptions} height={400} width={600} />
           </div>
         </div>
       )}
