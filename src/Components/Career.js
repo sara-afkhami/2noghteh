@@ -85,7 +85,7 @@ const Career = (props) => {
         <Loader />
       ) : (
         <div className="intro">
-          <div className="col-md-6 intro-text main">
+          <div className="col-md-5 intro-text career">
             <h1>
               {props.data ? props.data.title : "Loading"}
               <span></span>
@@ -167,8 +167,8 @@ const Career = (props) => {
               </Form>
             </Formik>
           </div>
-          <div className="col-md-6 intro-text main animated-div" id="home-gif">
-            <Lottie options={defaultOptions} height={400} width={600} />
+          <div className="col-md-7 intro-text animated-div" id="home-gif">
+            <Lottie options={defaultOptions} height={400} width={1000} />
           </div>
         </div>
       )}

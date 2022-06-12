@@ -25,19 +25,19 @@
   },
   "DigitalMarketing": {
     "title": "Digital Marketing",
-    "paragraph": "There ’ s a whole range of reasons we ’ re going to be leaders. Using research, insight and strategy, Donoghteh enables innovative, creative, compelling campaigns and builds digital capabilities for its clients who don't have an integrated plan to support digital transformation and company growth, and engage their audiences effectively online.",
+    "paragraph": "There's a whole range of reasons we're going to be leaders.",
     "items": ["Platform", "Development Search Engine Optimization (SEO)", "Content Marketing"],
     "gif": "0"
   },
   "ContentCreation": {
     "title": "Content Creation",
-    "paragraph": "We change the way you define yourself. That ’ s a promise. Donoghteh uses the power of creativity to create emotion at scale to help brands be more easily remembered and emotion in context. With plenty of customization in mind, we'll make sure that your brand is ready to take the world!",
-    "items": ["asdfghjk"],
+    "paragraph": "We use the power of creativity to create emotions in content.",
+    "items": ["Visual Branding", "Animation And Motion Graphics", "Video Production Services"],
     "gif": "1"
   },
   "FilmAndSeries": {
-    "title": "Film And Series",
-    "paragraph": "We, in Donoghteh, have been trying for years to bring to screen the human stories at the heart of the businesses that are driving change and fuelling growth through venture capital. The way we see it, if you are going to stay late, fight for ideas and make the best work of your life you may as well do it with people you like.",
+    "title": "Film & Series",
+    "paragraph": "There's a whole range of reasons we're going to be leaders.",
     "items": ["Film Venture Capital", "Short Film", "Screenplay"],
     "gif": "2"
   },

@@ -104,8 +104,8 @@ const ContactUs = (props) => {
 
   const ContactUsInfo = () => {
     return (
-      <div className="intro contact-us">
-        <div className="col-md-5 intro-text">
+      <div className="intro ">
+        <div className="col-md-4 intro-text contact-us">
           <h1>{props.data ? props.data.title : "Loading"}</h1>
           <div className="space c">
             <p className="space">
@@ -137,8 +137,8 @@ const ContactUs = (props) => {
           </button>
           <SocialMedia />
         </div>
-        <div className="col-md-7 intro-text main animated-div" id="home-gif">
-            <Lottie options={defaultOptions} height={400} width={400} />
+        <div className="col-md-8 intro-text animated-div" id="home-gif">
+            <Lottie options={defaultOptions} height={500} width={1000} />
           </div>
       </div>
     );

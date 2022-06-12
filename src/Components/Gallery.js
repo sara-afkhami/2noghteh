@@ -187,7 +187,7 @@ const Gallery = () => {
   ) : (
     <div className="gallery">
       <ThemeProvider theme={theme}>
-        <h1 className="gallery-title">Art Works</h1>
+        <h1 className="gallery-title"><strong>Art Works</strong></h1>
         <Box sx={{ maxWidth: "100%", bgcolor: "transparent" }}>
           <AppBar
             position="static"

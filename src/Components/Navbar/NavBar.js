@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../DONOGHTE_LOGO_Donoghte_En_Fulllogo.png";
+import logo from "../logo.svg";
 import "./NavBar.css";
 
 function NavBar() {
@@ -12,10 +12,11 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            <i><img alt="" src={logo}></img></i>
+            <i><img alt="" className="logo-svg" src={logo}></img></i>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
+
             <li className="nav-item">
               <NavLink
                 exact
@@ -71,7 +72,7 @@ function NavBar() {
                 Film & Series
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item last">
               <NavLink
                 exact
                 to="team"
@@ -82,23 +83,17 @@ function NavBar() {
                 Team
               </NavLink>
             </li>
-            {/* <li className="nav-item">
-              <NavLink
-                exact
-                to="team"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Team
-              </NavLink>
-            </li> */}
-            <div className="navbar-btn">
-          <NavLink to="contactus">
-            <button className="header-btn">contact us</button>
-          </NavLink>
-        </div>
+            <div className="navbar-btn-responsive">
+            <NavLink to="contactus">
+              <button className="header-btn"><strong>contact us</strong></button>
+            </NavLink>
+          </div>
           </ul>
+          <div className="navbar-btn">
+            <NavLink to="contactus">
+              <button className="header-btn"><strong>contact us</strong></button>
+            </NavLink>
+          </div>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
